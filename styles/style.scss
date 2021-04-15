@@ -1,0 +1,52 @@
+@import '../node_modules/normalize.css/normalize.css';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import './animations';
+@import "./background";
+@import "./navbar";
+@import "./offer";
+@import "./gallery";
+
+.container-fluid {
+    padding: 0px;
+
+}
+
+.content {
+    padding: 50px;
+}
+
+.img-custom {
+    opacity: 0.8;
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 50%;
+    box-sizing: border-box;
+
+    &-left {
+        box-shadow: -5rem -2rem 0px 0px rgba(198, 180, 159, 1);
+    }
+
+    &-right {
+        box-shadow: 5rem -2rem 0px 0px rgba(198, 180, 159, 1);
+    }
+}
+
+
+.section-header {
+    padding-top: 40px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    color: rgba(0,0,0,0.90);
+}
+
+.projects__gallery-column {
+    height: 170vh
+}
+
+.contact__map {
+    opacity: 0.8;
+    border-radius: 2%;
+}
+

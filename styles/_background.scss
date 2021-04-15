@@ -1,0 +1,22 @@
+.background__image {
+    background-image: url("../assets/bg4_sepia.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+  
+.background__filter {
+
+    background-color: rgba(255, 255, 255, 0.8);
+    // backdrop-filter: blur(30px);
+}
+
+.brand {
+    height: 60vh;
+    background-image: url("../assets/img5.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+    // background-color: rgba(220, 199, 160, .5);
+}
