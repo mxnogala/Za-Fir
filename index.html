@@ -18,27 +18,30 @@
     <div class="background__image">
 
         <div class="background__filter">
-
-            <nav class="navbar sticky-top justify-content-center align-items-baseline">
-                <div class="container d-flex align-items-center justify-content-center">
-                    <ul class="nav justify-content-center align-items-baseline">
-                        <li class="nav-item">
+            <!-- justify-content-center align-items-baseline -->
+            <nav class="navbar sticky-top ">
+                <div class="container d-flex justify-content-between justify-content-md-center align-items-start">
+                    <ul class="nav align-items-baseline flex-column flex-md-row">
+                        <li class="nav-item mobile-hide order-2 order-md-1">
                             <a class="nav-link active" href="#about-us">O nas</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mobile-hide order-3 order-md-2">
                             <a class="nav-link" href="#offer">Oferta</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item order-1 order-md-3">
                             <span class="navbar-brand">Za-fir</span>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mobile-hide order-4">
                             <a class="nav-link" href="#projects">Nasze projekty</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mobile-hide order-5">
                             <a class="nav-link" href="#contact">Kontakt</a>
                         </li>
 
                     </ul>
+                    <div class="nav__collapse">
+                        <i class="fa fa-bars fa-xl" aria-hidden="true"></i>
+                    </div>
                 </div>
             </nav>
 
@@ -242,6 +245,7 @@
     </div>
     <script src="./scripts/navbar.js"></script>
     <script src="./scripts/gallery.js"></script>
+    <script src="./scripts/mobile.js"></script>
 </body>
 
 </html>

@@ -13284,4 +13284,38 @@ footer {
 .text {
   text-align: justify; }
 
+.mobile-nav {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px; }
+
+.nav__collapse {
+  display: none; }
+
+@media (max-width: 768px) {
+  .nav__collapse {
+    display: block;
+    font-size: 30px;
+    padding-top: 8px; }
+    .nav__collapse i:hover {
+      color: #1a1a1a; }
+
+  .mobile-hide-active {
+    color: #4d4d4d; }
+
+  .mobile-hide-disabled {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .5s linear;
+    height: auto; }
+
+  .mobile-hide {
+    overflow: hidden;
+    transition: max-height .5s linear;
+    height: auto;
+    max-height: 400px; } }
+
 /*# sourceMappingURL=style.css.map */

@@ -48,4 +48,50 @@ footer {
     text-align: justify;
 }
 
+.mobile-nav {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+}
+
+.nav__collapse {
+    display: none;
+}
+
+@media (max-width: 768px)
+{
+    .nav__collapse {
+        display: block;
+        font-size: 30px;
+        padding-top: 8px;
+
+        i {
+            &:hover {
+                color: lighten(black, 10%);
+            }
+        }
+    }
+
+    .mobile-hide-active {
+        color: lighten(black, 30%);
+    }
+    .mobile-hide-disabled {
+        overflow:hidden;
+        max-height: 0;
+        transition: max-height .5s linear;
+        height: auto;
+    }
+
+    .mobile-hide {
+        overflow: hidden; 
+        transition: max-height .5s linear;
+        height: auto;
+        max-height: 400px;
+    }
+
+
+}
 

@@ -7,7 +7,7 @@ const hideOnScroll = () => {
         navbar.style.top = "0";
     }
     else {
-        navbar.style.top = "-100px";
+        navbar.style.top = "-400px";
     }
     yOffset = currentYOffset;
 }
