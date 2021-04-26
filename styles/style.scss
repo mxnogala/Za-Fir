@@ -26,11 +26,7 @@ body {
 
 
 
-.section-header {
-    font-family: 'Great Vibes', cursive;
-    font-size: 4rem;
-    color: rgba(0,0,0,0.90);
-}
+
 
 
 .contact__map {
@@ -61,6 +57,9 @@ footer {
     display: none;
 }
 
+.gallery__btn {
+    display: none;
+}
 @media (max-width: 768px)
 {
     .nav__collapse {
@@ -81,17 +80,47 @@ footer {
     .mobile-hide-disabled {
         overflow:hidden;
         max-height: 0;
-        transition: max-height .5s linear;
+        transition: max-height .5s ease-in-out;
         height: auto;
     }
 
     .mobile-hide {
         overflow: hidden; 
-        transition: max-height .5s linear;
+        transition: max-height .5s ease-in-out;
         height: auto;
         max-height: 400px;
     }
 
 
+
+    // 
+    .mobile-gallery {
+        overflow:hidden;
+        max-height: 0;
+        transition: max-height 1s ease-in-out;
+        height: auto;
+    
+        &-active {
+            overflow: hidden; 
+            transition: max-height 1s ease-in-out;
+            height: auto;
+            max-height: 10000px;
+        }
+    }
+
+    .gallery__btn {
+        display: block;
+    }
 }
 
+
+
+
+.appear {
+    opacity: 0;
+    transition: opacity 1s linear;
+
+    &-fade {
+        opacity:1;
+    }
+}

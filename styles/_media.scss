@@ -3,26 +3,26 @@
 
 }
 
-@media (max-width: 768px)
+@media (min-width: 768px)
 {
+    .img-custom {
+        max-height: 23rem;
+        max-width: 23rem;
 
+    }
 }
 
 @media (max-width: 992px)
 {
-
+    
 
 }
 
 @media (min-width: 992px)
 {
-    // .gallery-container {
-    //     height: 100vh;
-    // }
 
     .img-custom {
-        height: 25rem;
-        width: 25rem;
+
         &-left {
             box-shadow: -5rem -2rem 0px 0px rgba(198, 180, 159, 1);
         }

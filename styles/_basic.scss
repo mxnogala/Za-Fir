@@ -1,9 +1,16 @@
 .img-custom {
     opacity: 0.8;
-    width: 70vw;
-    height: 70vw;
+    width: 60vw;
+    height: 60vw;
     object-fit: cover;
     border-radius: 50%;
     box-sizing: border-box;
+    // margin: 30px 0 ;
 
+}
+
+.section-header {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: rgba(0,0,0,0.90);
 }

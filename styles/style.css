@@ -12921,11 +12921,16 @@ readers do not read off random characters that represent icons */
 
 .img-custom {
   opacity: 0.8;
-  width: 70vw;
-  height: 70vw;
+  width: 60vw;
+  height: 60vw;
   object-fit: cover;
   border-radius: 50%;
   box-sizing: border-box; }
+
+.section-header {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.9); }
 
 @keyframes unfoldIn {
   0% {
@@ -13162,7 +13167,7 @@ readers do not read off random characters that represent icons */
   padding: 0 20px; }
 
 .offer {
-  height: 520px;
+  height: 550px;
   font-weight: 500; }
   .offer__background {
     height: inherit;
@@ -13171,9 +13176,11 @@ readers do not read off random characters that represent icons */
     background-position: 0 50%;
     background-size: cover;
     position: relative;
-    object-fit: fill; }
+    object-fit: fill;
+    -webkit-box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.2); }
   .offer__filter {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     height: inherit;
     width: 100%;
     position: absolute;
@@ -13181,14 +13188,17 @@ readers do not read off random characters that represent icons */
     left: 0;
     z-index: 2; }
   .offer__list {
-    list-style: none; }
+    list-style: none;
+    padding: 0; }
   .offer__item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     padding: 10px 0; }
   .offer__icon {
-    padding-right: 20px; }
+    padding: 0 15px; }
+
+.offer__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
 
 html.modal-active, body.modal-active {
   overflow: hidden; }
@@ -13236,21 +13246,49 @@ html.modal-active, body.modal-active {
 .gallery-container {
   min-height: 101%; }
 
-.projects__img {
+.gallery__img {
   opacity: 0.8;
   cursor: pointer;
   padding: 2px 0; }
-  .projects__img:hover {
+  .gallery__img:hover {
     opacity: 1; }
 
-@media (min-width: 992px) {
+.modal__chevron {
+  font-size: 3rem;
+  opacity: 0.9; }
+
+#modal-previous {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5%;
+  z-index: 6; }
+
+#modal-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+  z-index: 6; }
+
+.modal__close {
+  padding: 10px;
+  font-size: 2.8rem;
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  z-index: 6;
+  opacity: 0.95; }
+
+@media (min-width: 768px) {
   .img-custom {
-    height: 25rem;
-    width: 25rem; }
-    .img-custom-left {
-      box-shadow: -5rem -2rem 0px 0px #c6b49f; }
-    .img-custom-right {
-      box-shadow: 5rem -2rem 0px 0px #c6b49f; } }
+    max-height: 23rem;
+    max-width: 23rem; } }
+@media (min-width: 992px) {
+  .img-custom-left {
+    box-shadow: -5rem -2rem 0px 0px #c6b49f; }
+  .img-custom-right {
+    box-shadow: 5rem -2rem 0px 0px #c6b49f; } }
 @media (max-width: 1400px) {
   .gallery-container {
     max-height: 100%; } }
@@ -13267,11 +13305,6 @@ body {
 
 .content {
   padding: 50px; }
-
-.section-header {
-  font-family: 'Great Vibes', cursive;
-  font-size: 4rem;
-  color: rgba(0, 0, 0, 0.9); }
 
 .contact__map {
   opacity: 0.8;
@@ -13295,6 +13328,9 @@ footer {
 .nav__collapse {
   display: none; }
 
+.gallery__btn {
+  display: none; }
+
 @media (max-width: 768px) {
   .nav__collapse {
     display: block;
@@ -13309,13 +13345,32 @@ footer {
   .mobile-hide-disabled {
     overflow: hidden;
     max-height: 0;
-    transition: max-height .5s linear;
+    transition: max-height .5s ease-in-out;
     height: auto; }
 
   .mobile-hide {
     overflow: hidden;
-    transition: max-height .5s linear;
+    transition: max-height .5s ease-in-out;
     height: auto;
-    max-height: 400px; } }
+    max-height: 400px; }
+
+  .mobile-gallery {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s ease-in-out;
+    height: auto; }
+    .mobile-gallery-active {
+      overflow: hidden;
+      transition: max-height 1s ease-in-out;
+      height: auto;
+      max-height: 10000px; }
+
+  .gallery__btn {
+    display: block; } }
+.appear {
+  opacity: 0;
+  transition: opacity 1s linear; }
+  .appear-fade {
+    opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,6 @@
 .offer {
 
-    height: 520px;
+    height: 550px;
     font-weight: 500;
     &__background {
         height: inherit;
@@ -10,10 +10,12 @@
         background-size: cover;
         position: relative;
         object-fit: fill;
+        -webkit-box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.2); 
+        box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.2);
     }
 
     &__filter {
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(255, 255, 255, 0.7);
         height: inherit;
         width: 100%;
         position:absolute;
@@ -25,17 +27,34 @@
 
 
     &__list {
-        list-style: none;        
+        list-style: none;       
+        padding: 0; 
     }
 
     &__item {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        // display: flex;
+        // flex-direction: row;
+        // align-items: center;
         padding: 10px 0;
     }
 
     &__icon {
-        padding-right: 20px;
+        padding: 0 15px;
     }
+
+    // &__column {
+    //     &-right {
+    //         margin-left: 20px;
+    //     }
+
+    //     &-left {
+    //         margin-right: 20px;
+    //     }
+    // }
+}
+
+.offer__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
