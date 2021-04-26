@@ -10,16 +10,20 @@
         max-width: 23rem;
 
     }
-}
 
-@media (max-width: 992px)
-{
-    
-
+    .container-offer {
+        padding: 0;
+    }
 }
 
 @media (min-width: 992px)
 {
+    .brand {
+        height: 80vh;
+    }
+    .sectionHeader {
+        font-size: 5rem;
+    }
 
     .img-custom {
 
@@ -33,10 +37,29 @@
     }
 
 }
+@media (min-width: 1200px)
+{
+    section {
+        margin: 90px 0;
+    }
+
+    .img-custom {
+
+        &-left {
+            box-shadow: -5rem -1.5rem 0px 0px rgba(198, 180, 159, 1);
+        }
+    
+        &-right {
+            box-shadow: 5rem -1.5rem 0px 0px rgba(198, 180, 159, 1);
+        }
+    }
+
+}
+
 
 @media (max-width: 1400px)
 {
-    .gallery-container {
+    .gallery__container {
         // min-height: 150vh;
         max-height: 100%;
     }
@@ -44,9 +67,15 @@
 
 @media (min-width: 1401px)
 {
-    .gallery-container {
+    .gallery__container {
         // min-height: 175vh;
         max-height: 100%;
+    }
+
+    .img-custom-horizontal {
+        min-height: 150px;
+        max-height: 150px;
+        object-fit: cover;
     }
 
 }

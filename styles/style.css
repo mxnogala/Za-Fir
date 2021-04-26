@@ -12919,6 +12919,9 @@ readers do not read off random characters that represent icons */
   position: static;
   width: auto; }
 
+section {
+  margin: 50px 0; }
+
 .img-custom {
   opacity: 0.8;
   width: 60vw;
@@ -12929,8 +12932,9 @@ readers do not read off random characters that represent icons */
 
 .section-header {
   font-family: 'Great Vibes', cursive;
-  font-size: 3rem;
-  color: rgba(0, 0, 0, 0.9); }
+  font-size: 3.5rem;
+  color: rgba(0, 0, 0, 0.9);
+  padding-bottom: 20px; }
 
 @keyframes unfoldIn {
   0% {
@@ -13140,7 +13144,7 @@ readers do not read off random characters that represent icons */
   background-color: rgba(255, 255, 255, 0.8); }
 
 .brand {
-  height: 60vh;
+  min-height: 500px;
   background-image: url("../assets/img5.jpg");
   background-position: center;
   background-size: cover;
@@ -13247,11 +13251,10 @@ html.modal-active, body.modal-active {
   min-height: 101%; }
 
 .gallery__img {
-  opacity: 0.8;
   cursor: pointer;
   padding: 2px 0; }
   .gallery__img:hover {
-    opacity: 1; }
+    opacity: 0.8; }
 
 .modal__chevron {
   font-size: 3rem;
@@ -13283,18 +13286,40 @@ html.modal-active, body.modal-active {
 @media (min-width: 768px) {
   .img-custom {
     max-height: 23rem;
-    max-width: 23rem; } }
+    max-width: 23rem; }
+
+  .container-offer {
+    padding: 0; } }
 @media (min-width: 992px) {
+  .brand {
+    height: 80vh; }
+
+  .sectionHeader {
+    font-size: 5rem; }
+
   .img-custom-left {
     box-shadow: -5rem -2rem 0px 0px #c6b49f; }
   .img-custom-right {
     box-shadow: 5rem -2rem 0px 0px #c6b49f; } }
+@media (min-width: 1200px) {
+  section {
+    margin: 90px 0; }
+
+  .img-custom-left {
+    box-shadow: -5rem -1.5rem 0px 0px #c6b49f; }
+  .img-custom-right {
+    box-shadow: 5rem -1.5rem 0px 0px #c6b49f; } }
 @media (max-width: 1400px) {
-  .gallery-container {
+  .gallery__container {
     max-height: 100%; } }
 @media (min-width: 1401px) {
-  .gallery-container {
-    max-height: 100%; } }
+  .gallery__container {
+    max-height: 100%; }
+
+  .img-custom-horizontal {
+    min-height: 150px;
+    max-height: 150px;
+    object-fit: cover; } }
 body {
   font-size: 1.3rem;
   font-family: 'Dosis', sans-serif;
@@ -13303,8 +13328,24 @@ body {
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
   padding: 0px; }
 
-.content {
-  padding: 50px; }
+.container-offer {
+  padding: 0 15vw; }
+
+@keyframes anim {
+  0% {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    opacity: 1; } }
+.gallery__btn {
+  background-color: transparent;
+  border: none;
+  border: solid 2px black;
+  font-size: 1.5rem;
+  margin-bottom: 20px; }
 
 .contact__map {
   opacity: 0.8;
@@ -13357,11 +13398,11 @@ footer {
   .mobile-gallery {
     overflow: hidden;
     max-height: 0;
-    transition: max-height 1s ease-in-out;
+    transition: max-height .5s ease-in-out;
     height: auto; }
     .mobile-gallery-active {
       overflow: hidden;
-      transition: max-height 1s ease-in-out;
+      transition: max-height .5s ease-in-out;
       height: auto;
       max-height: 10000px; }
 

@@ -67,12 +67,12 @@ html,body {
 }
 
 .gallery__img {
-  opacity: 0.8;
+  // opacity: 0.8;
   cursor: pointer;
   padding: 2px 0;
 
   &:hover {
-    opacity: 1;
+    opacity: 0.8;
   }
 }
 

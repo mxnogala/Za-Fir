@@ -19,15 +19,36 @@ body {
 
 }
 
-.content {
-    padding: 50px;
+.container-offer {
+    padding: 0 15vw;
 }
 
 
+//
+$speed: 0.5s;
 
+  @keyframes anim {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+              opacity:0;
+    }
+    100% {
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+              opacity:1;
+    }
+  }
 
-
-
+.gallery__btn {
+    background-color: transparent;
+    border: none;
+    border: solid 2px black;
+    font-size: 1.5rem;
+    // width: 100vw;
+    margin-bottom: 20px;
+    
+}
 
 .contact__map {
     opacity: 0.8;
@@ -97,12 +118,12 @@ footer {
     .mobile-gallery {
         overflow:hidden;
         max-height: 0;
-        transition: max-height 1s ease-in-out;
+        transition: max-height .5s ease-in-out;
         height: auto;
     
         &-active {
             overflow: hidden; 
-            transition: max-height 1s ease-in-out;
+            transition: max-height .5s ease-in-out;
             height: auto;
             max-height: 10000px;
         }

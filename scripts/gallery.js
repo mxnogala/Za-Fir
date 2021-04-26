@@ -1,4 +1,4 @@
-const images = [...document.querySelectorAll('.projects__img')];
+const images = [...document.querySelectorAll('.gallery__img')];
 const modalContainer = document.querySelector('#modal');
 const modalClose = document.querySelector(".modal__close");
 const modalImg = document.querySelector(".modal__img");

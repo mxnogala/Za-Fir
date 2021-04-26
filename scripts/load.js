@@ -5,12 +5,19 @@ const options = {
 }
 
 const observer = new IntersectionObserver((entries, o) => {
+    let screenSize = window.matchMedia("(max-width: 762px)");
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add("appear-fade");
-        } else {
+            if (screenSize.matches) {
+                observer.unobserve(entry.target);
+                return;
+            }
+        }
+        else {
             entry.target.classList.remove("appear-fade");
         }
+
     });
 }, options);
 
