@@ -5,47 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Za-Fir Dekoracje Okien</title>
+    <meta name="description"
+        content="Firma Za-Fir to firma, zajmująca się szyciem szerokiej gamy ozdób okiennych, takich jak firany czy zasłony.">
+    <meta name="keywords"
+        content="firany, zasłony, zazdroski, ozdoby okienne, dekoracje okienne, szycie, szycie firan, ostrzeszów, ekrany, panele, rolety rzymskie, rolety">
+    <link rel="shortcut icon" href="./assets/needle.svg>" type="image/x-icon" />
+    <meta name="author" content="Monika Nogała">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="./scripts/map.js"></script>
 </head>
 
 <body>
-    <div class="background__image">
 
+    <div class="background">
         <div class="background__filter">
-            <nav class="navbar sticky-top ">
+
+
+            <nav class="navbar sticky-top">
                 <div class="container d-flex justify-content-between justify-content-md-center align-items-start">
-                    <ul class="nav align-items-baseline flex-column flex-md-row">
-                        <li class="nav-item mobile-hide-disabled order-2 order-md-1">
+                    <ul class="navbar__list nav align-items-baseline flex-column flex-md-row">
+                        <li class="navbar__item nav-item mobile-hide-disabled order-2 order-md-1">
                             <a class="nav-link active" href="#about-us">O nas</a>
                         </li>
-                        <li class="nav-item mobile-hide-disabled order-3 order-md-2">
+                        <li class="navbar__item nav-item mobile-hide-disabled order-3 order-md-2">
                             <a class="nav-link" href="#offer">Oferta</a>
                         </li>
-                        <li class="nav-item order-1 order-md-3">
-                            <span class="navbar-brand">Za-fir</span>
+                        <li class=" nav-item order-1 order-md-3">
+                            <span class="navbar__brand">Za-fir</span>
                         </li>
-                        <li class="nav-item mobile-hide-disabled order-4">
-                            <a class="nav-link" href="#gallery">Nasze projekty</a>
+                        <li class="navbar__item nav-item mobile-hide-disabled order-4">
+                            <a class="nav-link" href="#gallery">Galeria</a>
                         </li>
-                        <li class="nav-item mobile-hide-disabled order-5">
+                        <li class="navbar__item nav-item mobile-hide-disabled order-5">
                             <a class="nav-link" href="#contact">Kontakt</a>
                         </li>
-
                     </ul>
-                    <div class="nav__collapse">
+                    <div class="navbar__collapse">
                         <i class="fa fa-bars fa-xl" aria-hidden="true"></i>
                     </div>
                 </div>
             </nav>
 
 
-            <div class="container-fluid brand d-flex justify-content-center align-items-center"></div>
+            <div class="container-fluid background__brand d-flex justify-content-center align-items-center"></div>
 
             <div class="container-fluid">
                 <main>
@@ -60,7 +68,7 @@
                                     <div class="text-content pb-lg-2">
                                         <h1 class="section-header">O nas</h1>
 
-                                        <p class="text">Firma Za-Fir to firma, zajmująca się szyciem szerokiej
+                                        <p class="text">Firma Za-Fir zajmuje się szyciem szerokiej
                                             gamy
                                             ozdób
                                             okiennych,
@@ -98,6 +106,7 @@
 
 
                     <section class="offer appear" id="offer">
+
                         <div class="offer__background">
                             <div class="offer__filter d-flex align-items-center">
                                 <div class="container px-5">
@@ -129,7 +138,7 @@
                                                                 data=assets/needle.svg></object>Obrusy
                                                         </li>
                                                         <li class="offer__item"><object class="offer__icon"
-                                                                data=assets/needle.svg></object>Zazdroski</li>
+                                                                data=assets/needle.svg></object>Zazdrostki</li>
                                                         <li class="offer__item"><object class="offer__icon"
                                                                 data=assets/needle.svg></object>Taśmy
                                                             upinające zasłony
@@ -148,9 +157,9 @@
 
                 <div class="container">
                     <div class="row">
-                        <h1 class="section-header">Nasze realizacje</h1>
+                        <h1 class="section-header">Galeria</h1>
                     </div>
-                    <button type="button" class="gallery__btn btn">Wyświetl galerię</button>
+                    <button type="button" class="gallery__btn underline">Wyświetl galerię </button>
 
                     <div id="gallery-collapse" class="row gallery__container mobile-gallery">
                         <div class="col-12 col-sm-6 col-lg-3 d-flex align-items-start flex-column">
@@ -223,32 +232,54 @@
                     <div class="row d-flex align-items-center">
                         <div class="col-12 col-lg-6 ">
                             <h1 class="section-header">Kontakt</h1>
-                            <p class="text">Zapraszamy do naszego sklepu, który znajduje się przy ulicy Jana Pawła II 24
+                            <p class="text">Zapraszamy do naszego sklepu, który znajduje się przy ulicy Jana Pawła
+                                II 24
                                 w
                                 Ostrzeszowie.</p>
-                            <p class="text">Jeżeli masz pytania lub chcesz umówić się na spotkanie, zadzwoń na numer 123
-                                456
-                                789.</p>
+                            <p class="text">Jeżeli masz pytania lub chcesz umówić się na spotkanie, zadzwoń na numer
+                                <span style="display:block; font-weight: 600;">+48 123
+                                    456
+                                    789.</span>
+                            </p>
 
                         </div>
-                        <div class="col-12 col-lg-6">
-                            <iframe class="contact__map"
-                                src="
-                                        https://www.google.com/maps/embed?key=AIzaSyD-O5t8oENb4_0YkrEhl6w9GSxd5oUVs4I&pb=!4v1618298111772!6m8!1m7!1s9F8IOOlh_Pfx2sF3QRvJ8Q!2m2!1d51.41973627246612!2d17.91978003019069!3f242.63024644550694!4f-3.270261609629017!5f0.7820865974627469"
-                                width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                        <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-hend">
+
+                            <iframe style="border-radius:2%" ;
+                                src="https://www.google.com/maps/embed?pb=!4v1619533543691!6m8!1m7!1s9F8IOOlh_Pfx2sF3QRvJ8Q!2m2!1d51.41973627246612!2d17.91978003019069!3f246.12197694176695!4f0!5f0.7820865974627469"
+                                width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
-                    </div>
-                </div>
             </section>
 
             </main>
 
-            <footer>
-                Jakieś tam informacje
-            </footer>
 
+            <footer>
+                <div class="container">
+
+                    <div class="row">
+                        <div class="footer__content">
+                            <h5 class="footer__brand d-flex justify-content-center py-4">ZA-FIR Dekoracje okienne</h5>
+                            <p class="text d-flex justify-content-center"><i
+                                    class="fa fa-phone-alt d-flex align-items-center pe-2" aria-hidden="true"></i>+48
+                                123
+                                456 789
+                            </p>
+                            <p class="text d-flex justify-content-center pb-3"><i
+                                    class="fas fa-map-marked-alt d-flex align-items-center pe-2"></i> ul. Jana
+                                Pawła II 24 w Ostrzeszowie</p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </footer>
         </div>
     </div>
+
+
+
     <script src="./scripts/navbar.js"></script>
     <script src="./scripts/gallery.js"></script>
     <script src="./scripts/mobile.js"></script>

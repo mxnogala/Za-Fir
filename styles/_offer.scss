@@ -1,6 +1,5 @@
 .offer {
-
-    height: 550px;
+    height: 570px;
     font-weight: 500;
     &__background {
         height: inherit;
@@ -21,10 +20,8 @@
         position:absolute;
         top: 0;
         left: 0;
-        z-index: 2;
-    
+        z-index: 2;   
     }
-
 
     &__list {
         list-style: none;       
@@ -32,9 +29,6 @@
     }
 
     &__item {
-        // display: flex;
-        // flex-direction: row;
-        // align-items: center;
         padding: 10px 0;
     }
 
@@ -42,19 +36,10 @@
         padding: 0 15px;
     }
 
-    // &__column {
-    //     &-right {
-    //         margin-left: 20px;
-    //     }
+    &__content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 
-    //     &-left {
-    //         margin-right: 20px;
-    //     }
-    // }
-}
-
-.offer__content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }

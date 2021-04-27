@@ -1,14 +1,8 @@
-@media (max-width: 576px)
-{
-
-}
-
-@media (min-width: 768px)
+@include media-breakpoint-up(sm) 
 {
     .img-custom {
         max-height: 23rem;
         max-width: 23rem;
-
     }
 
     .container-offer {
@@ -16,28 +10,67 @@
     }
 }
 
-@media (min-width: 992px)
+@include media-breakpoint-down(md)
 {
-    .brand {
+
+    .mobile-hide {
+        overflow: hidden; 
+        transition: max-height .5s ease-in-out;
+        height: auto;
+        max-height: 400px;
+
+        &-disabled {
+            overflow:hidden;
+            max-height: 0;
+            transition: max-height .5s ease-in-out;
+            height: auto;
+        }
+
+        &-active {
+            color: lighten(black, 30%);
+        }
+    
+    }
+    .navbar__collapse {
+        display: block;
+        font-size: 30px;
+        padding-top: 8px;
+
+    }
+
+    .mobile-gallery {
+        overflow:hidden;
+        max-height: 0;
+        transition: max-height .5s ease-in-out;
+        height: auto;
+    
+        &-active {
+            overflow: hidden; 
+            transition: max-height .5s ease-in-out;
+            height: auto;
+            max-height: 10000px;
+        }
+    }
+
+    .gallery__btn {
+        display: block;
+    }
+}
+
+@include media-breakpoint-up(md)
+{
+    .background__brand {
         height: 80vh;
     }
     .sectionHeader {
-        font-size: 5rem;
-    }
-
-    .img-custom {
-
-        &-left {
-            box-shadow: -5rem -2rem 0px 0px rgba(198, 180, 159, 1);
-        }
-    
-        &-right {
-            box-shadow: 5rem -2rem 0px 0px rgba(198, 180, 159, 1);
-        }
+        font-size: 6rem;
+        color: white;
     }
 
 }
-@media (min-width: 1200px)
+
+
+@include media-breakpoint-up(lg)
 {
     section {
         margin: 90px 0;
@@ -56,26 +89,10 @@
 
 }
 
-
-@media (max-width: 1400px)
+@include media-breakpoint-up(xxl)
 {
     .gallery__container {
-        // min-height: 150vh;
-        max-height: 100%;
-    }
-}
-
-@media (min-width: 1401px)
-{
-    .gallery__container {
-        // min-height: 175vh;
-        max-height: 100%;
-    }
-
-    .img-custom-horizontal {
-        min-height: 150px;
-        max-height: 150px;
-        object-fit: cover;
+        max-height: 101%;
     }
 
 }

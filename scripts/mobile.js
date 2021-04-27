@@ -1,8 +1,8 @@
-const menu = document.querySelector(".nav__collapse");
+const menu = document.querySelector(".navbar__collapse");
 const navLinks = [...document.querySelectorAll(".mobile-hide-disabled")];
 const btn = document.querySelector(".gallery__btn");
 const gallery = document.querySelector("#gallery-collapse");
-const galleryText = ["Wyświetl galerię", "Ukryj galerię"];
+const galleryText = ["Wyświetl galerię ", "Ukryj galerię "];
 
 const hideMenu = () => {
     menu.firstElementChild.classList.toggle('mobile-hide-active')
@@ -11,7 +11,6 @@ const hideMenu = () => {
         link.classList.toggle("mobile-hide");
     })
 }
-menu.addEventListener("click", hideMenu);
 
 const hideGallery = () => {
     gallery.classList.toggle("mobile-gallery");
@@ -25,4 +24,5 @@ const hideGallery = () => {
 
 }
 
+menu.addEventListener("click", hideMenu);
 btn.addEventListener("click", hideGallery);

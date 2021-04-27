@@ -8,18 +8,52 @@
     transition: top 0.3s;
     z-index: 3;
 
-}
+    &__item {
+        a {
+            color: black;
+        }
+        padding: 0 10px;
+        transform: translateZ(0);
+        position: relative;
+        &:before {
+          overflow:hidden;
+          content: "";
+          position: absolute;
+          left: 100%;
+          right: 0;
+          bottom: 0px;
+          background: black;
+          height: 2px;
+          transition-property: right;
+          transition: left 0.2s ease-out;
+        }
+        &:hover:before {
+          left: 0;
+        }
+    }
 
-.nav-link {
-    color: black;
+    &__brand {
+        font-family: 'Great Vibes', cursive;
+        font-size: 3rem;
+        padding: 0 20px;
+        pointer-events: none;
+        border: none;
+    
+        &:hover {
+            border:none;
+        }
+    }
 
-    &:hover {
-        border-bottom: 2px solid black;
+    &__collapse {
+        display: none;
     }
 }
 
-.navbar-brand {
-    font-family: 'Great Vibes', cursive;
-    font-size: 3rem;
-    padding: 0 20px;
+.mobile-nav {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
 }
