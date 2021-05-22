@@ -17716,7 +17716,7 @@ footer {
   opacity: 0.95; }
 
 .gallery-container {
-  min-height: 101%; }
+  min-height: 100%; }
 .gallery__img {
   cursor: pointer;
   padding: 2px 0; }
@@ -17793,6 +17793,6 @@ footer {
     box-shadow: 5rem -1.5rem 0px 0px #c6b49f; } }
 @media (min-width: 1400px) {
   .gallery__container {
-    max-height: 101%; } }
+    max-height: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
